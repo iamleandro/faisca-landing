@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faisca Games</title>
+  <meta name="description" content="Faisca Games. A spark, then a game.">
+  <style>
+    :root {
+      --bg: #141414;
+      --ink: #f4efe6;
+      --mute: #9a9388;
+      --line: #2a2a2a;
+      --spark: #ffcc33;
+      --signal: #247A54;
+      --ember: #c4621c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      min-height: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 28px 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .mark { width: 88px; height: auto; display: block; }
+    .studio {
+      margin-top: 28px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #d06a22 0%, #a44a16 55%, #7a3010 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 10px rgba(164, 74, 22, 0.28));
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 28px;
+      font-weight: 560;
+      letter-spacing: -0.03em;
+    }
+    .game {
+      width: 100%;
+      margin-top: 56px;
+      text-align: left;
+    }
+    .still {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #0b0b0b;
+    }
+    .still img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+    }
+    .caption {
+      margin-top: 12px;
+      color: var(--mute);
+      font-size: 15px;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 72px;
+      font-size: 15px;
+    }
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid #3a3a3a;
+    }
+    a:hover { border-bottom-color: var(--spark); }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="mark" src="logo.png" alt="Faisca">
+    <p class="studio">Faisca Games</p>
+    <h1>A spark, then a game.</h1>
+
+    <section class="game" aria-label="DEAD AIR">
+      <div class="still">
+        <img src="deadair.png" alt="Listen closer. The truth is in the traffic.">
+      </div>
+      <p class="caption">Dead Air: Ashmere - Coming soon.</p>
+    </section>
+
+    <footer>
+      <a href="mailto:contact@faisca.gg">contact@faisca.gg</a>
+    </footer>
+  </main>
+</body>
+</html>
