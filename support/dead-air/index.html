@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dead Air: Ashmere Support | Faisca Games</title>
+  <meta name="description" content="Help, troubleshooting, purchases, credits, account support, and contact information for Dead Air: Ashmere by Faisca Games Inc.">
+  <link rel="canonical" href="https://faisca.gg/support/dead-air/">
+  <style>
+    :root {
+      --bg: #141414;
+      --surface: #191919;
+      --ink: #f4efe6;
+      --mute: #aaa297;
+      --line: #303030;
+      --spark: #ffcc33;
+      --ember: #c4621c;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--ink);
+      text-decoration-color: #5b574f;
+      text-underline-offset: 0.2em;
+    }
+    a:hover { text-decoration-color: var(--spark); }
+    a:focus-visible {
+      outline: 2px solid var(--spark);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .site-header__inner {
+      width: min(100% - 40px, 820px);
+      margin: 0 auto;
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand img {
+      width: 38px;
+      height: auto;
+      display: block;
+    }
+    .brand span {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #d06a22 0%, #a44a16 55%, #7a3010 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .header-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px 20px;
+      font-size: 15px;
+    }
+    main {
+      width: min(100% - 40px, 820px);
+      margin: 0 auto;
+      padding: 72px 0 96px;
+    }
+    .eyebrow {
+      color: var(--ember);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 680px;
+      margin: 10px 0 14px;
+      font-size: clamp(36px, 7vw, 60px);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+    .dates {
+      margin: 0;
+      color: var(--mute);
+      font-size: 15px;
+    }
+    .intro {
+      max-width: 720px;
+      margin: 38px 0 0;
+      color: #d9d3ca;
+      font-size: 20px;
+      line-height: 1.55;
+    }
+    .contact-card {
+      margin: 34px 0 54px;
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--ember);
+      border-radius: 8px;
+      background: var(--surface);
+      color: #d9d3ca;
+    }
+    .contact-card p:last-child { margin-bottom: 0; }
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      margin: 0 0 54px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--line);
+    }
+    .quick-links a {
+      padding: 13px 16px;
+      background: var(--surface);
+      text-decoration: none;
+    }
+    .quick-links a:hover { color: var(--spark); }
+    article { max-width: 760px; }
+    section {
+      padding: 38px 0;
+      border-top: 1px solid var(--line);
+      scroll-margin-top: 24px;
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-size: 26px;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 19px;
+      line-height: 1.35;
+    }
+    p { margin: 0 0 16px; }
+    ul, ol {
+      margin: 0 0 18px;
+      padding-left: 24px;
+    }
+    li { margin: 7px 0; }
+    strong { color: #fffaf1; }
+    .site-footer {
+      border-top: 1px solid var(--line);
+      color: var(--mute);
+      font-size: 14px;
+    }
+    .site-footer__inner {
+      width: min(100% - 40px, 820px);
+      margin: 0 auto;
+      padding: 28px 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px 24px;
+    }
+    .site-footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+    }
+    @media (max-width: 560px) {
+      .site-header__inner { padding: 17px 0; }
+      .brand span { font-size: 12px; }
+      .header-nav { font-size: 14px; }
+      main { padding-top: 52px; }
+      .intro { font-size: 18px; }
+      .quick-links { grid-template-columns: 1fr; }
+      section { padding: 32px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="Faisca Games home">
+        <img src="../../logo.png" alt="">
+        <span>Faisca Games</span>
+      </a>
+      <nav class="header-nav" aria-label="Page navigation">
+        <a href="/privacy/dead-air/">Privacy</a>
+        <a href="/">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="eyebrow">Dead Air: Ashmere</p>
+    <h1>Support</h1>
+    <p class="dates"><strong>Last updated:</strong> September 1, 2026</p>
+    <p class="intro">Dead Air: Ashmere is a narrative investigation game for mobile devices. Listen to recorded radio traffic, question people, collect evidence, choose three clues, and file your deduction.</p>
+
+    <div class="contact-card">
+      <p><strong>Need help?</strong> Email <a href="mailto:support@faisca.gg">support@faisca.gg</a>, or open <strong>Dead Air → Settings → Feedback → Report a problem</strong>.</p>
+    </div>
+
+    <nav class="quick-links" aria-label="Support topics">
+      <a href="#getting-started">Getting started</a>
+      <a href="#audio">Audio troubleshooting</a>
+      <a href="#credits">Credits and purchases</a>
+      <a href="#offline">Playing offline</a>
+      <a href="#account">Saving and accounts</a>
+      <a href="#reporting">Report a problem</a>
+    </nav>
+
+    <article>
+      <section id="requirements">
+        <h2>System requirements</h2>
+        <p>Dead Air requires:</p>
+        <ul>
+          <li>an iPhone running iOS 17 or later (Android will be available soon);</li>
+          <li>an internet connection for credits, purchases, account actions, recoveries, and case unlocks; and</li>
+          <li>audio output through your iPhone speaker, headphones, or another connected device.</li>
+        </ul>
+        <p>The game is designed for portrait orientation. It does not monitor live radio or emergency-service communications; all case recordings are fictional and included with the game.</p>
+      </section>
+
+      <section id="getting-started">
+        <h2>Getting started</h2>
+        <p>The current release includes <strong>Case 001 — The Missing Package</strong>, an approximately 30–45 minute investigation at Hawthorne Investigations.</p>
+        <p>To solve the case:</p>
+        <ol>
+          <li>Open the case file from the agency screen.</li>
+          <li>Visit the Radio Monitor and listen to transmissions across all five channels.</li>
+          <li>Answer listening questions and collect evidence.</li>
+          <li>Contact the people connected to the case.</li>
+          <li>Choose three clues on the evidence board.</li>
+          <li>Open the deduction file and submit your conclusion.</li>
+        </ol>
+        <p>You can replay recordings and change playback speed between <strong>1.0×, 0.75×, and 0.5×</strong>.</p>
+        <p>Case 002 may appear as a locked or newly unlocked file after Case 001 is resolved. Its playable content is not included in the current version.</p>
+      </section>
+
+      <section id="languages">
+        <h2>Languages and learning assistance</h2>
+        <p>Dead Air supports interfaces and case assistance in:</p>
+        <ul>
+          <li>English;</li>
+          <li>Spanish;</li>
+          <li>Portuguese (Brazil);</li>
+          <li>Simplified Chinese; and</li>
+          <li>Japanese.</li>
+        </ul>
+        <p>Change the interface or case-text language under <strong>Settings → Language</strong>.</p>
+        <p>Transcripts, vocabulary, and listening questions remain in English because understanding the case’s English recordings is part of the investigation. Definitions, contextual explanations, slower playback, captions, and replay controls are available to help.</p>
+        <p>If you find an incorrect translation, choose <strong>Report this translation</strong> where available, or open <strong>Settings → Feedback → Report a wrong translation</strong>. You may write your report in any language.</p>
+      </section>
+
+      <section id="audio">
+        <h2>Audio troubleshooting</h2>
+        <p>If you cannot hear a recording:</p>
+        <ol>
+          <li>Raise your iPhone’s media volume.</li>
+          <li>Check whether audio is being sent to headphones, a Bluetooth device, AirPlay, or CarPlay.</li>
+          <li>Pause and replay the transmission.</li>
+          <li>Close and reopen Dead Air.</li>
+          <li>Restart your iPhone if the issue continues.</li>
+        </ol>
+        <p>If only one recording is affected, report the problem from Settings and identify the channel or transmission. The in-app report automatically includes useful technical details.</p>
+
+        <h3>Transcripts and captions</h3>
+        <p>A transcript is initially hidden. After attempting a recording, you can spend <strong>1 credit</strong> to reveal its written transcript.</p>
+        <p>If <strong>Prefer captions after a listen</strong> is enabled under <strong>Settings → Playback</strong>, the text is also shown after you complete a recording. You can tap highlighted vocabulary for a simple definition and contextual meaning.</p>
+      </section>
+
+      <section id="credits">
+        <h2>How credits work</h2>
+        <p>Every new player starts with <strong>3 free credits</strong>.</p>
+        <p>One credit is used when you:</p>
+        <ul>
+          <li>reveal a hidden transcript;</li>
+          <li>choose an incorrect answer to a listening question;</li>
+          <li>submit an incorrect deduction; or</li>
+          <li>request a translation during an interview.</li>
+        </ul>
+        <p>When your total balance drops below 3, free credits recover four hours later, bringing your balance back <strong>up to 3</strong>. For example, a balance of 1 receives 2 free credits.</p>
+        <p>Purchased credits are kept separately, never expire, and are not removed by the free recovery. Free credits are used before purchased credits.</p>
+        <p>You can continue listening and use previously unlocked investigation tools with no credits. Actions that spend credits require an internet connection.</p>
+
+        <h3>Buying credits</h3>
+        <p>Tap the <strong>Credits</strong> meter in the game header to open the store. Available packs contain <strong>10, 30, or 50 credits</strong>. Prices are supplied by the App Store and may vary by storefront.</p>
+        <p>Before your first purchase, Dead Air requires Sign in with Apple. This protects your purchased credits so they remain associated with a recoverable account if you reinstall the app or change devices.</p>
+        <p>If a purchase is waiting for Ask to Buy approval, the credits arrive after the purchase is approved. If payment succeeds but delivery is still processing, you may close the app; delivery should finish automatically.</p>
+
+        <h3>A purchase completed, but my credits are missing</h3>
+        <ol>
+          <li>Confirm that your iPhone is online.</li>
+          <li>Reopen Dead Air and allow it a moment to refresh the balance.</li>
+          <li>Confirm that you are using the same Apple Account connected to your Dead Air player.</li>
+          <li>Check whether the purchase is still awaiting Ask to Buy approval.</li>
+        </ol>
+        <p>If the credits still do not appear, contact <a href="mailto:support@faisca.gg">support@faisca.gg</a>. Include the approximate purchase date, the size of the credit pack, your app version, and any message shown in the store. Do not send passwords, sign-in codes, or full payment details.</p>
+        <p>Consumable credit packs do not use a conventional “Restore Purchases” button. Their balance is recovered through the Dead Air account connected with Sign in with Apple.</p>
+      </section>
+
+      <section id="offline">
+        <h2>Playing offline</h2>
+        <p>Downloaded case content remains substantially playable offline. You can listen to included recordings and revisit content and tools that have already been unlocked.</p>
+        <p>The credit meter may display your last known balance while offline. The following actions require a connection:</p>
+        <ul>
+          <li>spending credits;</li>
+          <li>claiming a free-credit recovery;</li>
+          <li>buying or delivering a credit pack;</li>
+          <li>unlocking a case;</li>
+          <li>changing account-level privacy choices; and</li>
+          <li>deleting an account.</li>
+        </ul>
+        <p>If you see <strong>“You need a connection for this. Your progress is safe,”</strong> reconnect and try the action again.</p>
+      </section>
+
+      <section id="account">
+        <h2>Saving, resetting, and changing devices</h2>
+        <p>Your current investigation progress and settings are saved automatically on your iPhone. Your credit balance and case unlocks are maintained separately by Dead Air’s account service.</p>
+        <p>Selecting <strong>Settings → Reset case progress</strong> clears the active investigation and returns it to the beginning. It does not refund credits already spent.</p>
+        <p>Detailed investigation progress is stored locally and may be lost if Dead Air is deleted or reinstalled. Signing in with Apple before purchasing makes your account, purchased credits, and account-level unlocks recoverable.</p>
+
+        <h3>Refunds</h3>
+        <p>App Store purchases and refund decisions are handled by Apple. Dead Air cannot approve or guarantee a refund.</p>
+        <p>If Apple approves a refund for a credit pack, unused credits from that purchase may be removed from your balance. A refund never removes more credits than remain from the refunded purchase.</p>
+        <p>Under <strong>Settings → Privacy</strong>, you may choose whether Dead Air can provide Apple with limited information about the refunded pack when you initiate a refund request. This setting is off by default and can be turned off again at any time.</p>
+
+        <h3>Privacy</h3>
+        <p>Read the <a href="/privacy/dead-air/">Dead Air Privacy Policy</a> for information about accounts, purchases, analytics, crash reports, privacy choices, data retention, and account deletion.</p>
+        <p>Usage analytics are off unless you choose to enable them under <strong>Settings → Privacy</strong>. Dead Air does not contain advertising or cross-app tracking.</p>
+
+        <h3>Deleting your account and data</h3>
+        <p>Open <strong>Settings → Account → Delete account and data</strong>.</p>
+        <p>If your account is connected to Sign in with Apple, Apple will ask you to verify your identity before deletion can finish.</p>
+        <p>Deleting your account permanently removes your account, credits, unlocked cases, and local progress. Purchased credits are lost and cannot be restored. This action cannot be undone.</p>
+        <p>If deletion fails, nothing is deleted. Check your connection and try again. If your account uses Sign in with Apple, verify with the same Apple Account connected to your Dead Air player.</p>
+      </section>
+
+      <section id="accessibility">
+        <h2>Accessibility and comfort settings</h2>
+        <p>Under <strong>Settings → Playback</strong>, you can:</p>
+        <ul>
+          <li>prefer captions after completing a recording;</li>
+          <li>reduce radio motion; and</li>
+          <li>turn haptics on or off.</li>
+        </ul>
+        <p>Dead Air also supports slower audio playback for recordings.</p>
+      </section>
+
+      <section id="reporting">
+        <h2>Reporting a problem</h2>
+        <p>The quickest option is <strong>Settings → Feedback → Report a problem</strong>. Dead Air opens a pre-filled email containing:</p>
+        <ul>
+          <li>the Dead Air version and build;</li>
+          <li>your iOS version and device model;</li>
+          <li>your interface and case-text languages; and</li>
+          <li>the active case and screen.</li>
+        </ul>
+        <p>Add a description of what happened and send it from your mail app. If no mail app is configured, the report is copied to your clipboard so you can send it manually.</p>
+        <p>You can also email <a href="mailto:support@faisca.gg">support@faisca.gg</a> directly. Please include:</p>
+        <ul>
+          <li>what you were trying to do;</li>
+          <li>what happened instead;</li>
+          <li>any error message displayed;</li>
+          <li>steps that reproduce the problem;</li>
+          <li>your iPhone model, iOS version, and Dead Air version; and</li>
+          <li>a screenshot or screen recording, if helpful.</li>
+        </ul>
+        <p>Please do not include passwords, Apple verification codes, authentication tokens, or full payment information.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>© Faisca Games Inc.</span>
+      <div class="site-footer__links">
+        <a href="/privacy/dead-air/">Privacy Policy</a>
+        <a href="mailto:support@faisca.gg">support@faisca.gg</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
